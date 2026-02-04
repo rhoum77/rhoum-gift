@@ -7,13 +7,13 @@
     box-sizing: border-box;
 }
 :root{
-    --color-pink: #feecea;
-    --color-white: #fff;
-    --color-black: #333;
-    --color-text-pink: #ff7882;
-    --color-heart: #F61F1F;
-    --color-bg-letter: #fff8e4;
-    --color-border: #DACCBF;
+    --color-pink: #333333; /* Dark grey */
+    --color-white: #aaaaaa; /* Light grey for text */
+    --color-black: #eeeeee; /* Light color for borders and shadows */
+    --color-text-pink: #ff4d6b; /* Darker pink */
+    --color-heart: #cc0022; /* Darker red */
+    --color-bg-letter: #222222; /* Darker background for letter */
+    --color-border: #555555; /* Darker border color */
 }
 html{
     height: 100%;
