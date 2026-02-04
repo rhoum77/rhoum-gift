@@ -503,6 +503,7 @@ body {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     font-size: 2.4rem;
+    color: var(--color-white); /* Lighter text color */
 }
 .title__letter .fa-solid{
     margin-left: 5px;
@@ -537,13 +538,14 @@ body {
         opacity: 1;
     }
 }
-.main-content .text__letter{
+.main-content .text__letter p {
     margin-top: 60px;
     padding: 20px 15px 10px 15px;
     font-family: 'Sriracha', cursive;
     font-size: 1.3rem;
     text-align: center;
     white-space: pre-line;
+    color: var(--color-white); /* Lighter text color */
 }
 .main-content #mewmew{
     position: absolute;
@@ -678,6 +680,7 @@ body {
         font-family: 'Dancing Script', cursive;
         font-weight: bold;
         font-size: 1.4rem;
+        color: var(--color-white); /* Lighter text color for mobile */
     }
 
     .letter__border .letter .content__letter {
@@ -691,11 +694,12 @@ body {
         padding: 0;
     }
 
-    .main-content .text__letter {
+    .main-content .text__letter p {
         margin-top: -14px;
         padding: 20px 15px 10px 15px;
         font-family: 'Sriracha', cursive;
         font-size: .8rem;
+        color: var(--color-white); /* Lighter text color for mobile */
     }
 
     .main-content .love__img {
