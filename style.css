@@ -473,10 +473,6 @@ body {
 }
 
 
-.letter__border * {
-    color: var(--color-white) !important;
-}
-
 .box__letter{
     position: fixed;
     top: 0;
