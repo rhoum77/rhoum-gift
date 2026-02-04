@@ -347,6 +347,10 @@ body {
     left: -70px;
     animation: balloon1 2s infinite linear;
 }
+.right .balloon_one img,
+.right .balloon_two img {
+    max-width: 100px; /* Limit size on larger screens */
+}
 @keyframes balloon1{
     0%, 50%,100%{
         transform-origin: bottom right;
@@ -672,6 +676,10 @@ body {
         animation: topHat 4s 7s forwards ease;
     }
 
+    .title .hat img {
+        width: 80px; /* Smaller hat for mobile */
+    }
+
     .box__letter .letter__border {
         position: absolute;
         width: 90vw;
@@ -781,6 +789,15 @@ body {
         bottom: 20px;
         left: 20px;
         transform: scale(0.7); /* Scale down for mobile */
+    }
+    .decorate_star,
+    .decorate_flower--one,
+    .decorate_flower--two,
+    .decorate_flower--three {
+        display: none; /* Hide decorative elements on mobile */
+    }
+    .decorate_bottom {
+        width: 60px; /* Smaller bottom decoration for mobile */
     }
 
 
