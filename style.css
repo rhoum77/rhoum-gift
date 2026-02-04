@@ -6,18 +6,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
 :root{
-    --color-pink: #333333; /* Dark grey */
-    --color-white: #aaaaaa; /* Light grey for text */
-    --color-black: #eeeeee; /* Light color for borders and shadows */
-    --color-text-pink: #ff4d6b; /* Darker pink */
-    --color-heart: #cc0022; /* Darker red */
-    --color-bg-letter: #222222; /* Darker background for letter */
-    --color-border: #555555; /* Darker border color */
+    --color-pink: #feecea;
+    --color-white: #fff;
+    --color-black: #333;
+    --color-text-pink: #ff7882;
+    --color-heart: #F61F1F;
+    --color-bg-letter: #fff8e4;
+    --color-border: #DACCBF;
 }
 html{
     height: 100%;
@@ -44,9 +40,6 @@ body {
     justify-content: space-between;
     transform: translateY(-200px);
     animation: translateYFlag 1.5s 2s forwards;
-}
-.flag__birthday img {
-    width: 350px; /* Base width */
 }
 @keyframes translateYFlag{
     to{
@@ -175,9 +168,6 @@ body {
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
-}
-.title .hat img {
-    width: 130px; /* Base width */
 }
 @keyframes topHat{
     20%, 30%{
@@ -441,11 +431,6 @@ body {
     transform: scale(0);
     animation: scaleCricle 3s var(--t) forwards ease-in-out;
 }
-.decorate_flower--one img,
-.decorate_flower--two img,
-.decorate_flower--three img {
-    width: 20px; /* Base width for flower images */
-}
 .decorate_flower--two{
     position: absolute;
     top: 225px;
@@ -466,9 +451,6 @@ body {
     left: 600px;
     transform: scale(0);
     animation: scaleCricle 3s 15s forwards ease-in-out;
-}
-.decorate_bottom img, .smiley__icon img {
-    width: 100px; /* Base width for these images */
 }
 
 
@@ -555,7 +537,7 @@ body {
         opacity: 1;
     }
 }
-.main-content .text__letter p {
+.main-content .text__letter{
     margin-top: 60px;
     padding: 20px 15px 10px 15px;
     font-family: 'Sriracha', cursive;
@@ -599,11 +581,11 @@ body {
 @media screen and (max-width: 658px)   {
 
     .flag__birthday .flag__left {
-        transform: rotate(-10deg) translate(-50px,10px);
+        transform: rotate(-10deg) translate(-119px,3px);
     }
 
     .flag__birthday .flag__right {
-        transform: rotate(10deg) translate(50px,10px) scaleX(-1);
+        transform: rotate(10deg) translate(-106px,39px) scaleX(-1);
     }
 
     .content {
@@ -652,7 +634,7 @@ body {
     .cricle {
         position: absolute;
         top: 10px;
-        right: 10px; /* Adjusted to be visible */
+        right: -54px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -662,20 +644,25 @@ body {
 
     .title .hat {
         position: absolute;
-        right: 10px; /* Adjust right position */
-        top: -30px !important; /* Adjust top position */
+        right: -98px;
+        top: -51px !important;
         transform: rotate(-40deg);
         z-index: -1;
         animation: topHat 4s 7s forwards ease;
     }
 
-    .title .hat {
+    .box__letter .letter__border {
         position: absolute;
-        right: 10px; /* Adjust right position */
-        top: -30px !important; /* Adjust top position */
-        transform: rotate(-40deg);
-        z-index: -1;
-        animation: topHat 4s 7s forwards ease;
+        width: 90vw;
+        height: 315px;
+        background-color: var(--color-white);
+        border-radius: 27px;
+        padding: 17px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
     }
 
     .letter__border .letter {
@@ -704,41 +691,30 @@ body {
         padding: 0;
     }
 
-    .main-content .text__letter p {
+    .main-content .text__letter {
         margin-top: -14px;
         padding: 20px 15px 10px 15px;
         font-family: 'Sriracha', cursive;
         font-size: .8rem;
     }
 
-        .main-content .love__img {
+    .main-content .love__img {
+        opacity: 0;
+        position: absolute;
+        right: 126px;
+        top: 167px;
+    }
 
-            opacity: 0;
-
-            position: absolute;
-
-            right: 10px; /* Adjusted position for mobile */
-
-            top: 10px; /* Adjusted position for mobile */
-
-        }
-
-        .love__img img {
-
+    .love__img img {
+ 
             width: 84px;
 
-        }
-
-        #mewmew {
-
-            width: 60px; /* Set width for mobile */
-
-        }
+    }
 
     .content .right .image {
         position: relative;
-        width: 50vw; /* Use viewport width for responsiveness */
-        height: 50vw; /* Maintain aspect ratio with viewport width */
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         overflow: hidden;
         display: flex;
@@ -764,10 +740,8 @@ body {
         animation: balloon1 2s infinite linear;
     }
 
-    .smiley__icon {
-        bottom: 20px;
-        left: 20px;
-        transform: scale(0.7); /* Scale down for mobile */
+    .right .balloon_one img{
+        width: 76px !important;
     }
 
 
