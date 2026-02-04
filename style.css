@@ -29,6 +29,7 @@ body {
     padding: 0;
     height: 100%;
     background-image:linear-gradient(var(--color-pink), var(--color-pink));
+    color: var(--color-white); /* Default text color for body */
 }
 #wrapper{
     position: relative;
@@ -471,6 +472,10 @@ body {
     width: 100px; /* Base width for these images */
 }
 
+
+.letter__border * {
+    color: var(--color-white) !important;
+}
 
 .box__letter{
     position: fixed;
