@@ -29,7 +29,6 @@ body {
     padding: 0;
     height: 100%;
     background-image:linear-gradient(var(--color-pink), var(--color-pink));
-    color: var(--color-white); /* Default text color for body */
 }
 #wrapper{
     position: relative;
@@ -526,7 +525,6 @@ body {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     font-size: 2.4rem;
-    color: var(--color-white) !important; /* Lighter text color */
 }
 .title__letter .fa-solid{
     margin-left: 5px;
@@ -568,7 +566,6 @@ body {
     font-size: 1.3rem;
     text-align: center;
     white-space: pre-line;
-    color: var(--color-white) !important; /* Lighter text color */
 }
 .main-content #mewmew{
     position: absolute;
@@ -675,23 +672,8 @@ body {
         z-index: -1;
         animation: topHat 4s 7s forwards ease;
     }
-
     .title .hat img {
         width: 80px; /* Smaller hat for mobile */
-    }
-
-    .box__letter .letter__border {
-        position: absolute;
-        width: 90vw;
-        height: 315px;
-        background-color: var(--color-white);
-        border-radius: 27px;
-        padding: 17px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        display: none;
     }
 
     .letter__border .letter {
@@ -707,7 +689,6 @@ body {
         font-family: 'Dancing Script', cursive;
         font-weight: bold;
         font-size: 1.4rem;
-        color: var(--color-white) !important; /* Lighter text color for mobile */
     }
 
     .letter__border .letter .content__letter {
@@ -726,7 +707,6 @@ body {
         padding: 20px 15px 10px 15px;
         font-family: 'Sriracha', cursive;
         font-size: .8rem;
-        color: var(--color-white) !important; /* Lighter text color for mobile */
     }
 
         .main-content .love__img {
@@ -782,8 +762,9 @@ body {
         animation: balloon1 2s infinite linear;
     }
 
-    .right .balloon_one img{
-        width: 76px !important;
+    .right .balloon_one img,
+    .right .balloon_two img {
+        width: 70px; /* Adjusted size for mobile */
     }
     .smiley__icon {
         bottom: 20px;

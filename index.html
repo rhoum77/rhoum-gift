@@ -195,12 +195,10 @@
         setTimeout(function(){
             intervalTitle = setInterval(function(){
                 if(currentIndexTitle < charArrTitle.length){
-                    let titleElement = document.querySelector(".title__letter");
-                    titleElement.textContent += charArrTitle[currentIndexTitle];
-                    titleElement.style.color = '#aaaaaa'; // Explicitly set color to white
+                    document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
                     let i = document.createElement("i");
                     i.className = "fa-solid fa-star"
-                    titleElement.appendChild(i)
+                    document.querySelector(".title__letter").appendChild(i)
                     currentIndexTitle++;
                 }
                 else{
@@ -212,7 +210,6 @@
             intervalContent = setInterval(function(){
                 if(currentIndexLetter < charArrDateLetter.length){
                     text__letter.textContent += charArrDateLetter[currentIndexLetter];
-                    text__letter.style.color = '#aaaaaa'; // Explicitly set color to white
                     currentIndexLetter++;
                 }
                 else{
